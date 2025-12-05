@@ -79,3 +79,370 @@
         }
 
         /* Contact Butt
+                <!-- Progress Indicator -->
+                <div class="form-progress">
+                    <div class="progress-step">
+                        <div class="progress-circle active" id="progress1">1</div>
+                        <span class="progress-text active" id="progressText1">Contact Info</span>
+                    </div>
+                    <div class="progress-line" id="progressLine"></div>
+                    <div class="progress-step">
+                        <div class="progress-circle" id="progress2">2</div>
+                        <span class="progress-text" id="progressText2">Business Details</span>
+                    </div>
+                </div>
+
+                <!-- Step 1 -->
+                <div id="step1" class="form-step">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Business Name *</label>
+                        <input type="text" id="businessName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mobile Phone *</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <button class="btn submit-btn" onclick="goToStep2()">Continue to Next Step</button>
+                </div>
+
+                <!-- Step 2 -->
+                <div id="step2" class="form-step" style="display: none;">
+                    <div class="form-group">
+                        <label>Website URL (if you have one)</label>
+                        <input type="url" id="website">
+                    </div>
+
+                    <div class="form-group">
+                        <label>City / Service Area</label>
+                        <input type="text" id="serviceArea">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Main services you offer</label>
+                        <textarea rows="3" id="services"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Business size</label>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="size" value="solo"> Solo operator or 1–2 staff</label>
+                            <label><input type="radio" name="size" value="small"> Small team (3–10 staff)</label>
+                            <label><input type="radio" name="size" value="medium"> Medium business (11–40 staff)</label>
+                            <label><input type="radio" name="size" value="established"> Established business (41–100 staff)</label>
+                            <label><input type="radio" name="size" value="large"> Large or multi-location business (100+ staff)</label>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 15px;">
+                        <button class="btn submit-btn" onclick="goToStep1()" style="background: #999; flex: 0 0 120px;">Back</button>
+                        <button class="btn submit-btn" onclick="handleSubmit()" style="flex: 1;">Get My Custom Quote</button>
+                    </div>
+                </div>
+
+                <p class="form-reassurance">We respond fast. During business hours we aim to follow up within minutes so you can quickly see if this pre-launch offer is a good fit.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+    <div class="container">
+        <h2 class="section-heading">Results from past marketing and lead generation work</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="quote-mark">"</div>
+                <p class="testimonial-text">"70% increase in revenue in his first year. In the second year we had a 185% increase, nearly quadrupling our business revenue in just two years. We hired Darcy Lefebvre to plan and implement an online-focused marketing and communications strategy and to support restructuring our service packages, and the results spoke for themselves. I would gladly recommend Darcy Lefebvre and his team."</p>
+                <p class="testimonial-author">– R. Parton, Copywriting Services</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-mark">"</div>
+                <p class="testimonial-text">"Darcy Lefebvre was brought in to plan and implement a marketing and communications strategy that would build brand awareness across Vancouver Island and the Greater Vancouver area. Darcy also played a key role in the launch of our new shipping division, which was a huge success. 35% increase in online ticket sales in one year. Over one million dollars in new annual shipping revenue. A social media campaign that went viral and resulted in BC-wide media coverage."</p>
+                <p class="testimonial-author">– Dylan Green, Tofino Bus</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Comparison Section -->
+<section class="pricing-section">
+    <div class="container">
+        <h2 class="section-heading">Pre-Launch Pricing: Up to 50% Off + Free Competitive Advantages</h2>
+        <p class="pricing-intro">Our regular pricing is already very competitive—and the results you'll see are totally unfair to the competition. 😉 This one-time pre-launch offer gives you up to 50% off PLUS free services and tools that will give you a huge competitive edge!</p>
+        
+        <div class="pricing-comparison">
+            <div class="pricing-card featured">
+                <div class="pricing-badge">LIMITED TIME</div>
+                <h3>Pre-Launch Offer</h3>
+                <div class="pricing-value">Up to 50% OFF</div>
+                <div class="pricing-details">Lock in this pricing before December 22, 2025</div>
+                <ul class="pricing-features">
+                    <li>Custom website or landing page</li>
+                    <li>Basic AI automation setup</li>
+                    <li>Standard support timeline</li>
+                    <li>Regular onboarding process</li>
+                    <li style="margin-top: 15px; font-style: italic; color: rgba(255,255,255,0.9);">Get them all or just what you need!</li>
+                    <li style="margin-top: 15px; padding-top: 15px; border-top: 2px solid rgba(255,255,255,0.3);"><strong>PLUS FREE BONUSES:</strong></li>
+                    <li><strong>FREE:</strong> Advanced AI automation tools</li>
+                    <li><strong>FREE:</strong> Priority founding client support</li>
+                    <li><strong>FREE:</strong> Competitive intelligence features</li>
+                    <li><strong>BONUS:</strong> Direct access to our core team</li>
+                    <li><strong>BONUS:</strong> Live in 30 days or less guarantee</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Info Section -->
+<section class="info-section">
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>Why we are offering this pre-launch deal</h3>
+                <p>20Leads.com is a new company built by people who have been in marketing and lead generation for years. We know how important it is to have a list of happy customers who are getting real results.</p>
+                <p>During this pre-launch phase, we want to partner with a small group of service businesses that are serious about growth and open to using smart technology. In exchange for helping us refine our systems and sharing your results and feedback, you get:</p>
+                <ul>
+                    <li>Priority access to our best pricing</li>
+                    <li>Custom AI and automation tools designed for your business</li>
+                    <li>Direct access to our team as we build and optimize your lead engine</li>
+                </ul>
+                <p>If you are one of those companies that wants to go the extra mile, this is your chance to get in early.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Who is behind 20Leads.com?</h3>
+                <p>20Leads.com might be new, but the team behind it is not.</p>
+                <p>20Leads.com was founded by Darcy Lefebvre, a marketing and business development consultant with more than 20 years of experience working with service-based businesses.</p>
+                <p>Darcy is also the CEO and lead consultant at Smart Growth Consulting, a strategic consulting group based in Canada that helps established businesses unlock growth with AI, automation, and smart systems.</p>
+                <p><strong>Darcy's core strengths include:</strong></p>
+                <ul>
+                    <li>Lead generation strategy for service businesses</li>
+                    <li>Content marketing that attracts qualified leads</li>
+                    <li>AI and smart technology to streamline systems and follow-up</li>
+                </ul>
+                <p>The goal is simple: give local service-based businesses and contractors a huge competitive edge in their market.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="final-cta">
+    <div class="container">
+        <h2>Ready to dominate your local market?</h2>
+        <p>Lock in your pre-launch pricing and launch your high-converting website with AI-powered lead generation in 30 days or less.</p>
+        <a href="#quote-form" class="btn">Get My Custom Quote Now</a>
+        <p class="final-cta-urgency">⏰ Pre-launch offer ends December 22, 2025 · Only <span class="spots-number" id="spotsRemainingFinal">12</span> spots remaining</p>
+    </div>
+</section>
+
+<!-- Floating Contact Buttons -->
+<div class="contact-bar">
+    <a href="tel:+1-250-897-5450" class="contact-btn primary">
+        <span class="contact-btn-icon">📞</span>
+        <span>Call Now</span>
+    </a>
+    <a href="sms:+1-250-897-5450" class="contact-btn">
+        <span class="contact-btn-icon">💬</span>
+        <span>Text Us</span>
+    </a>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span style="color: white;">20</span><span style="color: #FF6B35;">Leads.com</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Countdown Timer
+    const countdownDate = new Date("December 22, 2025 23:59:59 PST").getTime();
+
+    // Spots remaining - Change this number to update all instances across the page
+    const spotsRemaining = 12;
+    
+    // Update all spots displays
+    document.getElementById('spotsRemaining').textContent = spotsRemaining;
+    document.getElementById('spotsRemainingCountdown').textContent = spotsRemaining;
+    document.getElementById('spotsRemainingFinal').textContent = spotsRemaining;
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+
+        if (distance < 0) {
+            clearInterval(countdownTimer);
+            document.querySelector('.countdown-timer').innerHTML = '<p style="color: #FF6B35; font-size: 24px; font-weight: bold;">Offer Ended</p>';
+        }
+    }
+
+    const countdownTimer = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Form step navigation
+    function goToStep2() {
+        // Validate step 1 fields
+        const fullName = document.getElementById('fullName').value.trim();
+        const businessName = document.getElementById('businessName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        if (!fullName || !businessName || !email || !phone) {
+            alert('Please fill in all required fields before continuing.');
+            return;
+        }
+
+        // Basic email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // CAPTURE STEP 1 DATA IMMEDIATELY
+        submitPartialLead({
+            fullName: fullName,
+            businessName: businessName,
+            email: email,
+            phone: phone,
+            formStep: 'Step 1 Only',
+            submittedAt: new Date().toLocaleString()
+        });
+
+        // Update progress indicator
+        document.getElementById('progress1').classList.add('completed');
+        document.getElementById('progress1').classList.remove('active');
+        document.getElementById('progressText1').classList.remove('active');
+        document.getElementById('progressLine').classList.add('completed');
+        document.getElementById('progress2').classList.add('active');
+        document.getElementById('progressText2').classList.add('active');
+
+        // Hide step 1, show step 2
+        document.getElementById('step1').style.display = 'none';
+        document.getElementById('step2').style.display = 'block';
+        
+        // Scroll to form top
+        document.querySelector('.quote-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Submit partial lead data (Step 1)
+    function submitPartialLead(data) {
+        // Send to Formspree
+        fetch('https://formspree.io/f/mzznvgdz', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).catch(err => console.log('Step 1 data logged locally'));
+        
+        console.log('Step 1 Lead Captured:', data);
+    }
+
+    function goToStep1() {
+        // Update progress indicator
+        document.getElementById('progress1').classList.remove('completed');
+        document.getElementById('progress1').classList.add('active');
+        document.getElementById('progressText1').classList.add('active');
+        document.getElementById('progressLine').classList.remove('completed');
+        document.getElementById('progress2').classList.remove('active');
+        document.getElementById('progressText2').classList.remove('active');
+
+        document.getElementById('step2').style.display = 'none';
+        document.getElementById('step1').style.display = 'block';
+        
+        // Scroll to form top
+        document.querySelector('.quote-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Form submission handler (Complete - Step 2)
+    function handleSubmit() {
+        // Collect all form data
+        const formData = {
+            fullName: document.getElementById('fullName').value,
+            businessName: document.getElementById('businessName').value,
+            email: document.getElementById('email').value,
+            phone: document.getElementById('phone').value,
+            website: document.getElementById('website').value,
+            serviceArea: document.getElementById('serviceArea').value,
+            services: document.getElementById('services').value,
+            businessSize: document.querySelector('input[name="size"]:checked')?.value || 'Not specified',
+            formStep: 'Complete - Both Steps',
+            submittedAt: new Date().toLocaleString()
+        };
+
+        // Send complete form to email
+        fetch('https://formspree.io/f/mzznvgdz', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        }).then(response => {
+            if (response.ok) {
+                alert('Thank you! We will contact you within minutes during business hours.');
+                
+                // Reset and close form
+                goToStep1();
+                document.getElementById('step1').querySelectorAll('input').forEach(input => input.value = '');
+                document.getElementById('step2').querySelectorAll('input, textarea').forEach(input => {
+                    if (input.type === 'radio') {
+                        input.checked = false;
+                    } else {
+                        input.value = '';
+                    }
+                });
+            } else {
+                alert('Thank you for your submission! We will be in touch soon.');
+            }
+        }).catch(err => {
+            alert('Thank you for your submission! We will be in touch soon.');
+        });
+
+        console.log('Complete Form Submitted:', formData);
+    }
+</script>
